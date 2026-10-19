@@ -1944,6 +1944,11 @@ https://templatemo.com/tm-593-personal-shape
             text-align: left;
         }
 
+        /* จำนวนการ์ดเป็นเลขคี่: ใบสุดท้ายกว้างเต็มแถว ไม่เหลือช่องว่าง */
+        .contact-info-grid > :last-child:nth-child(odd) {
+            grid-column: 1 / -1;
+        }
+
         .contact-card {
             display: flex;
             align-items: center;
