@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year 3 Projects · Thanyathorn Chaiyaphonthanakan</title>
     <!-- meta:start (tools/set_head_meta.py) -->
-    <meta name="description" content="An ESP32 smart walking stick, the HemoLens AR app and two web projects from my third year at KMUTT.">
+    <meta name="description" content="An ESP32 smart walking stick, a YOLO traffic-light simulation in Unity, the HemoLens AR app and two web projects from my third year at KMUTT.">
     <meta name="author" content="Thanyathorn Chaiyaphonthanakan">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Thanyathorn Chaiyaphonthanakan">
     <meta property="og:title" content="Year 3 Projects · Thanyathorn Chaiyaphonthanakan">
-    <meta property="og:description" content="An ESP32 smart walking stick, the HemoLens AR app and two web projects from my third year at KMUTT.">
+    <meta property="og:description" content="An ESP32 smart walking stick, a YOLO traffic-light simulation in Unity, the HemoLens AR app and two web projects from my third year at KMUTT.">
     <meta property="og:url" content="https://thanyathorn74.github.io/projects-year-3.html">
     <meta property="og:image" content="https://thanyathorn74.github.io/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
@@ -79,7 +79,7 @@ https://templatemo.com/tm-593-personal-shape
             <a class="back-link" href="projects-all.html"><i class="fas fa-arrow-left"></i> All projects</a>
             <div class="hero-subtitle">Year 3 · Academic Year 2025</div>
             <h1>Year 3 Projects</h1>
-            <p class="page-hero-course">DMT321 Integrated Product Design and Development / MMI320 Medical Instruction Media Technology / MDT312 Web Programming</p>
+            <p class="page-hero-course">DMT321 Integrated Product Design and Development / DMT322 Digital Image Processing Technique / MMI320 Medical Instruction Media Technology / MDT312 Web Programming</p>
         </div>
     </header>
 
@@ -91,10 +91,11 @@ https://templatemo.com/tm-593-personal-shape
                 <div class="portfolio-image icon-cover cover-3"><i class="fas fa-microchip"></i></div>
                 <div class="project-feature-body">
                     <span class="project-year">Academic Year 2025</span>
-                    <h2>IoT, AR &amp; Web Development</h2>
-                    <p class="project-course">DMT321 Integrated Product Design and Development / MMI320 Medical Instruction Media Technology / MDT312 Web Programming</p>
+                    <h2>IoT, AR, Computer Vision &amp; Web Development</h2>
+                    <p class="project-course">DMT321 Integrated Product Design and Development / DMT322 Digital Image Processing Technique / MMI320 Medical Instruction Media Technology / MDT312 Web Programming</p>
                     <ul>
                         <li>Designed and built a smart walking stick for elderly users on an ESP32 with motion (MPU6050) and grip-pressure (FSR402) sensors, fall detection and Wi-Fi app alerts.</li>
+                        <li>Built a Unity digital twin of a real junction where YOLO object detection counts cars from virtual CCTV and adapts the traffic lights, cutting peak-hour delay by 58%.</li>
                         <li>Built HemoLens AR, a marker-based AR app in Unity and Vuforia that teaches blood-group compatibility with 3D blood-cell models.</li>
                         <li>Built my first portfolio website and UnNiYam Shop, a full-stack online store with Node.js, Express and MySQL.</li>
                     </ul>
@@ -103,6 +104,8 @@ https://templatemo.com/tm-593-personal-shape
                         <span class="tech-tag">IoT</span>
                         <span class="tech-tag">Unity</span>
                         <span class="tech-tag">AR</span>
+                        <span class="tech-tag">YOLO</span>
+                        <span class="tech-tag">Computer Vision</span>
                         <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">Node.js</span>
                         <span class="tech-tag">MySQL</span>
@@ -147,6 +150,40 @@ https://templatemo.com/tm-593-personal-shape
 
             <div class="course-block">
                 <div class="course-head fade-in">
+                    <span class="course-code">DMT322</span>
+                    <div>
+                        <h3>Digital Image Processing Technique</h3>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">Unity Sentis</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- data-card-* ใช้ตอนสร้างการ์ดในหน้า All Projects -->
+                <article class="project-detail fade-in" id="smart-traffic" data-card-label="Computer Vision" data-card-image="images/projects/smart-traffic.jpg" data-card-desc="A Unity digital twin of a junction where YOLO counts cars and adapts the traffic lights, cutting peak-hour delay by 58%.">
+                    <div class="project-media" style="background: #65625b;">
+                        <img src="images/projects/smart-traffic.jpg" alt="Unity simulation of the Na Luang junction with roads, a roundabout, buildings and cars">
+                    </div>
+                    <div class="project-detail-body">
+                        <span class="project-year">Computer Vision · Group project (2 members)</span>
+                        <h4>Smart Traffic Light Simulation</h4>
+                        <p class="project-summary">A digital twin of the Na Luang three-way junction in front of KMUTT, built in Unity, where virtual CCTV cameras feed a YOLO model running in Unity Sentis to count and classify the cars waiting on each road. Instead of a fixed timer, each green light lasts 1.5 seconds per waiting car, between 3 and 15 seconds. Of the four detectors we compared, YOLOv11-Nano counted most accurately (MAE 0.18 at 58 FPS), and at peak hours the adaptive lights cut the average delay from 81.1 to 34.1 seconds per car (58% less) and moved 66% more cars per minute.</p>
+                        <div class="project-files">
+                            <a class="year-nav-link" href="https://drive.google.com/file/d/1T8kW54AvypGRQC7mFsyUhYkf5iQIDpX5/view" target="_blank" rel="noopener"><i class="fas fa-play-circle"></i> Demo Video</a>
+                            <a class="year-nav-link" href="https://drive.google.com/file/d/1nvC22PNoq_zcpiCDgLO88ijtl_pgP7H-/view" target="_blank" rel="noopener"><i class="fas fa-video"></i> CCTV View Video</a>
+                            <a class="year-nav-link" href="https://drive.google.com/file/d/1oMTfR8FOflwwNMcImU04ffSkGLMnblN9/view" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Report (PDF, Thai)</a>
+                            <a class="year-nav-link" href="https://drive.google.com/drive/folders/1qDtsf2GiACuUm2_TDHj5eCU_frKQm4qi" target="_blank" rel="noopener"><i class="fab fa-google-drive"></i> All Files</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="course-block alt">
+                <div class="course-head fade-in">
                     <span class="course-code">MMI320</span>
                     <div>
                         <h3>Medical Instruction Media Technology</h3>
@@ -179,7 +216,7 @@ https://templatemo.com/tm-593-personal-shape
                 </article>
             </div>
 
-            <div class="course-block alt">
+            <div class="course-block">
                 <div class="course-head fade-in">
                     <span class="course-code">MDT312</span>
                     <div>
